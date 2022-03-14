@@ -1,0 +1,92 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 99999;
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+nav.ready {
+  opacity: 1;
+}
+
+nav .nav-container {
+  width: calc(100% - 30px);
+  max-width: 1470px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+nav .nav-container .logo {
+  width: 120px;
+  opacity: 0;
+  transform: translateX(-21px) scale(1.08);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+nav.ready .nav-container .logo {
+  opacity: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.1s;
+}
+
+nav ul li:not(:last-child) {
+  display: none;
+}
+
+nav.ready ul li {
+  opacity: 1;
+}
+
+nav ul li:nth-child(2) {
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.2s;
+}
+
+nav ul li:nth-child(3) {
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.3s;
+}
+
+nav ul li:nth-child(4) {
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.4s;
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 60px;
+}
+
+nav ul li a {
+  font-family: "Satoshi";
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+}
+
+nav .line {
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background: #000;
+  left: 0;
+  bottom: -1px;
+  transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+nav.ready .line {
+  width: 100%;
+}

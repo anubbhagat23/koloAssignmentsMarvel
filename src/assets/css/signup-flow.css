@@ -1,0 +1,109 @@
+.sign-up .window {
+  position: relative;
+}
+
+.sign-up .window .content {
+  flex: 1 0 50%;
+}
+
+.sign-up .window p {
+  font-family: "Clash";
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 0;
+  padding-left: 90px;
+}
+
+.sign-up .window h2 {
+  font-family: "Clash";
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 0;
+  padding-left: 90px;
+}
+
+.sign-up .window h2 b {
+  color: #496052;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.sign-up .window h6,
+.window.twelfth h6 {
+  font-family: "Satoshi";
+  font-size: 20px;
+  padding-left: 90px;
+}
+
+.sign-up .window ul li p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  max-width: 400px;
+  padding-left: 0;
+}
+
+.sign-up .window>a,
+.recycling-value .window>.back,
+.recycling-value .window>.recycle {
+  position: absolute;
+  left: 0;
+  top: 30px;
+}
+
+.sign-up .window>a img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sign-up .window>a img:first-child {
+  margin-top: 51px;
+}
+
+.sign-up .window>a img:last-child {
+  width: 168px;
+}
+
+.sign-up .bg {
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: #f9fefb;
+}
+
+/* Mobile Queries */
+.mobile .sign-up .window {
+  flex-direction: column;
+  height: auto;
+}
+
+.mobile .sign-up .window p {
+  padding-left: 0;
+  margin-top: 180px;
+}
+
+.mobile .sign-up .window h2 {
+  padding-left: 0;
+}
+
+.mobile .sign-up .window h6 {
+  padding-left: 0;
+}
+
+.mobile .sign-up .window ul {
+  padding-left: 60px;
+  margin-bottom: 90px;
+}
+
+.mobile .sign-up .window ul li p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.mobile .sign-up .bg {
+  width: 100%;
+}

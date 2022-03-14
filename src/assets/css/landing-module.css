@@ -1,0 +1,1107 @@
+.order {
+  font-family: "Clash";
+  font-weight: 700;
+  font-size: 200px;
+  margin: 0;
+}
+
+.green-overlay {
+  display: block;
+  background: #496052;
+  width: 100%;
+  height: 200vh;
+  position: fixed;
+  top: 100vw;
+  min-height: -webkit-fill-available;
+  left: 0;
+  z-index: 99999;
+  transition: top 3s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.loaded .green-overlay {
+  top: -200vh;
+}
+
+.roller {
+  position: fixed;
+  left: 0;
+  bottom: 90px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1) 3s;
+}
+
+.loaded .roller {
+  opacity: 1;
+}
+
+.green-box {
+  display: block;
+  width: 561px;
+  height: 100%;
+  background: #4a706b;
+}
+
+.window.first {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 99998;
+  transition: height 1.5s cubic-bezier(0.22, 1, 0.36, 1) 1.5s;
+}
+
+.loaded .window.first {
+  height: 0vh;
+}
+
+.window.first .logo {
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.window.first .logo.show {
+  opacity: 1;
+}
+
+.window.second {
+  position: relative;
+}
+
+.window.second .content {
+  text-align: center;
+}
+
+.window.second h1,
+.window.thirteenth h2 {
+  font-family: "Clash";
+  font-size: 100px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.window.second p {
+  font-family: "Clash";
+  font-size: 40px;
+}
+
+.window.second .mobile-landing {
+  width: 150%;
+  position: absolute;
+  bottom: -300px;
+  left: -25%;
+  display: none;
+}
+
+.leaves {
+  display: block;
+  width: 100%;
+  height: 1px;
+  overflow: visible;
+  position: relative;
+  opacity: 0;
+  z-index: -1;
+  transform: translateY(120px) scale(0.84);
+  transition: all 0.6s cubic-bezier(0.83, 0, 0.17, 1) 3s;
+}
+
+.loaded .leaves {
+  transform: translateY(0px) scale(1);
+  opacity: 1;
+}
+
+.leaves>div {
+  position: absolute;
+  transform-origin: left top;
+}
+
+.leaves .leaf {
+  width: 120px;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.window.third {
+  position: relative;
+}
+
+.window.third .content,
+.window.fourth .content,
+.window.fifth .content,
+.window.fifsixthth .content {
+  width: 100%;
+  max-width: 1470px;
+}
+
+.window.third h2 {
+  font-family: "Clash";
+  font-weight: 500;
+  font-size: 80px;
+  max-width: 54%;
+  margin-top: 0;
+  margin-left: 90px;
+  margin-bottom: 60px;
+}
+
+.window.third p {
+  font-family: "Satoshi";
+  font-weight: 500;
+  font-size: 20px;
+  max-width: 54%;
+  margin-left: 90px;
+  margin-bottom: 45px;
+}
+
+.window.third a,
+.window.fourth a,
+.window.fifth a,
+.window.sixth a,
+.window.eighth a,
+.window.twelfth .know,
+.window.twelfth .how,
+.recycling-value .window>.recycle {
+  font-family: "Satoshi";
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  margin-left: 90px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.window.eighth a {
+  margin-left: 0;
+}
+
+.window.third a::before,
+.window.fourth a::before,
+.window.fifth a::before,
+.window.sixth a::before,
+.window.eighth a::before,
+.window.twelfth .know::before,
+.window.twelfth .how::before,
+.recycling-value .window>.recycle::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  right: 0px;
+  bottom: -6px;
+  transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.window.third a:hover::before,
+.window.fourth a:hover::before,
+.window.fifth a:hover::before,
+.window.sixth a:hover::before,
+.window.eighth a:hover::before,
+.window.twelfth .know:hover::before,
+.window.twelfth .how:hover::before,
+.recycling-value .window>.recycle:hover::before {
+  width: 0%;
+}
+
+.window.third .mobile-recycling {
+  position: absolute;
+  width: 150%;
+  bottom: -240px;
+  left: -25%;
+  display: none;
+}
+
+.window.fourth h2,
+.window.fifth h2 {
+  font-family: "Clash";
+  font-weight: 500;
+  font-size: 80px;
+  margin-left: 90px;
+  max-width: 60%;
+}
+
+.window.mobile-sustainable {
+  display: none;
+  height: auto;
+}
+
+.window.mobile-sustainable img {
+  display: block;
+  margin: 300px auto 0;
+}
+
+.window.mobile-sustainable h2 {
+  font-size: 30px;
+  font-family: "Clash";
+  font-weight: 500;
+}
+
+.window.fifth h2 {
+  max-width: 63%;
+}
+
+.window.fourth h2 span,
+.window.fifth h2 span {
+  color: #4a706b;
+}
+
+.window.mobile-how {
+  display: none;
+  height: auto;
+}
+
+.window.mobile-how img {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.window.sixth {
+  justify-content: flex-start;
+}
+
+.window.sixth .content {
+  width: 100%;
+  max-width: 720px;
+}
+
+.window.sixth h3 {
+  font-family: "Clash";
+  font-weight: 500;
+  font-size: 60px;
+  margin-left: 90px;
+  max-width: 600px;
+}
+
+.window.sixth .content>p {
+  font-size: 18px;
+  font-family: "Satoshi";
+  font-weight: 500;
+  margin-left: 90px;
+}
+
+.window.sixth ul,
+.sign-up .window ul,
+.window.twelfth ul {
+  list-style-type: none;
+  padding-left: 90px;
+}
+
+.window.sixth ul li,
+.sign-up .window ul li,
+.window.twelfth ul li {
+  position: relative;
+}
+
+.window.sixth ul li::before,
+.sign-up .window ul li::before,
+.window.twelfth ul li::before {
+  content: "";
+  display: block;
+  width: 51px;
+  height: 38px;
+  position: absolute;
+  left: -60px;
+  top: -15px;
+  background: url("../images/bullet.svg") no-repeat center center;
+}
+
+.window.sixth ul li h4 {
+  font-family: "Clash";
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.window.sixth ul li p,
+.sign-up .window ul li p,
+.window.twelfth ul li p {
+  font-family: "Satoshi";
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.window.sixth a {
+  margin-top: 90px;
+}
+
+.window.sixth .cupboard {
+  z-index: 99998;
+}
+
+.path {
+  position: absolute;
+  left: 50%;
+  top: 540vh;
+  height: 400vh;
+  overflow: hidden;
+  z-index: -1;
+  transform: translateX(-50%);
+}
+
+.window.seventh {
+  justify-content: flex-end;
+  position: relative;
+}
+
+.window.seventh .content {
+  max-width: 465px;
+  width: 100%;
+  align-self: flex-end;
+  padding-bottom: 90px;
+}
+
+.window.seventh .content h3,
+.window.eighth .content h3,
+.window.ninth .content h3,
+.window.tenth .content h3,
+.window.eleventh .content h3,
+.window.twelfth .content h3 {
+  font-family: "Clash";
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.window.seventh .content p,
+.window.eighth .content p,
+.window.ninth .content p,
+.window.tenth .content p,
+.window.eleventh .content p,
+.window.twelfth .content p {
+  font-family: "Satoshi";
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.window.mobile-01,
+.window.mobile-02,
+.window.mobile-03,
+.window.mobile-04,
+.window.mobile-05 {
+  height: auto;
+  display: none;
+}
+
+.window.mobile-01 img,
+.window.mobile-02 img,
+.window.mobile-03 img,
+.window.mobile-04 img,
+.window.mobile-05 img {
+  width: 100%;
+}
+
+.window.eighth {
+  justify-content: flex-start;
+}
+
+.window.eighth .content {
+  width: 100%;
+  max-width: 400px;
+  align-self: flex-end;
+  padding-bottom: 90px;
+  padding-left: 120px;
+}
+
+.window.ninth {
+  justify-content: flex-end;
+}
+
+.window.ninth .content {
+  width: 100%;
+  max-width: 400px;
+  align-self: flex-end;
+  padding-bottom: 120px;
+  padding-right: 120px;
+}
+
+.window.tenth {
+  justify-content: flex-end;
+}
+
+.window.tenth .content {
+  width: 100%;
+  max-width: 400px;
+  align-self: flex-end;
+  padding-bottom: 60px;
+  padding-right: 120px;
+}
+
+.window.eleventh {
+  justify-content: flex-end;
+}
+
+.window.eleventh .content {
+  width: 100%;
+  max-width: 400px;
+  align-self: flex-end;
+  padding-bottom: 180px;
+  padding-right: 120px;
+}
+
+.window.twelfth {
+  position: relative;
+}
+
+.window.twelfth .content {
+  flex: 1 0 50%;
+}
+
+.window.twelfth h3 {
+  font-family: "Clash";
+  font-weight: 500;
+  font-size: 40px;
+  padding-left: 90px;
+}
+
+.window.twelfth h3 span {
+  font-size: 60px;
+}
+
+.window.twelfth h3 span b {
+  color: #496052;
+  font-weight: 500;
+  margin-right: 12px;
+  min-width: 129px;
+  display: inline-block;
+}
+
+.window.twelfth .join,
+.window.thirteenth form button {
+  display: inline-block;
+  font-family: "Satoshi";
+  line-height: 66px;
+  border: 2px solid rgba(73, 96, 82, 1);
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  width: 300px;
+  background: rgba(73, 96, 82, 1);
+  text-decoration: none;
+  margin-left: 90px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.window.twelfth .join:hover,
+.window.thirteenth form button:hover {
+  background: rgba(73, 96, 82, 0);
+  color: rgba(73, 96, 82, 1);
+}
+
+.window.twelfth ul li p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  padding-left: 0;
+  max-width: 400px;
+}
+
+.window.twelfth h6 {
+  margin-top: 90px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.window.twelfth>img {
+  position: absolute;
+  width: 66vw;
+  max-width: 1462px;
+  right: -12%;
+  bottom: -24%;
+  opacity: 0.2;
+}
+
+.window.thirteenth .content {
+  flex: 1 0 50%;
+}
+
+.window.thirteenth h2 {
+  margin-top: 0;
+  margin-bottom: 90px;
+}
+
+.window.thirteenth .email {
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 500;
+  font-family: "Satoshi";
+  color: #000;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.window.thirteenth .email span {
+  display: inline-block;
+  width: 100%;
+  opacity: 0;
+  font-size: 12px;
+  font-family: "Satoshi";
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.window.thirteenth .email:hover span {
+  opacity: 1;
+}
+
+.window.thirteenth .social a {
+  display: inline-block;
+  font-family: "Satoshi";
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+.window.thirteenth .social a:not(:last-child) {
+  margin-right: 60px;
+}
+
+.window.thirteenth .address {
+  font-family: "Satoshi";
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 90px;
+  display: flex;
+}
+
+.window.thirteenth .address .col {
+  flex: 1 1 50%;
+}
+
+.window.thirteenth .updates {
+  font-family: "Clash";
+  font-weight: 500;
+  font-size: 24px;
+  max-width: 400px;
+  margin-top: 150px;
+  margin-bottom: 45px;
+}
+
+.window.thirteenth form {
+  max-width: 350px;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.window.thirteenth form.loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.window.thirteenth form label {
+  font-size: 14px;
+  font-family: "Satoshi";
+  display: block;
+}
+
+.window.thirteenth form input {
+  border: 0;
+  border-bottom: 1px solid #707070;
+  font-family: "Satoshi";
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 42px;
+  padding: 0;
+  width: 100%;
+  display: block;
+  outline: 0;
+}
+
+.window.thirteenth form .loader {
+  position: absolute;
+  right: 6px;
+  top: 24px;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.window.thirteenth form.loading .loader {
+  opacity: 1;
+}
+
+.window.thirteenth form .line {
+  display: block;
+  width: 0%;
+  max-width: 350px;
+  height: 1px;
+  background: rgba(73, 96, 82, 1);
+  margin-top: -2px;
+  transition: all 0.3s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.window.thirteenth form input:focus+.line {
+  width: 100%;
+}
+
+.window.thirteenth form input::placehoder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.window.thirteenth form span {
+  font-family: "Satoshi";
+  font-size: 10px;
+  font-weight: 500;
+  max-width: 350px;
+  margin-top: 12px;
+  display: block;
+}
+
+.window.thirteenth form button {
+  margin-left: 0;
+  margin-top: 30px;
+}
+
+.window.thirteenth .copy {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  font-family: "Satoshi";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.window.thirteenth .copy a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 120px;
+}
+
+.window.second h1,
+.window.second p,
+.window.third h2,
+.window.third p,
+.window.third .box,
+.window.fourth h2,
+.window.fifth h2,
+.window.fifth .box,
+.window.sixth h3,
+.window.sixth .content>p,
+.window.sixth ul li,
+.window.sixth .box,
+.window.seventh h3,
+.window.seventh p,
+.window.eighth h3,
+.window.eighth p,
+.window.eighth .box,
+.window.ninth h3,
+.window.ninth p,
+.window.tenth h3,
+.window.tenth p,
+.window.eleventh h3,
+.window.eleventh p,
+.window.mobile-sustainable h2 {
+  opacity: 0;
+  transform: translateY(300px) scale(0.84);
+  transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.6s;
+}
+
+.window.second h1 {
+  transition-delay: 1.8s;
+}
+
+.window.third h2,
+.window.third p,
+.window.third .box,
+.window.fourth h2,
+.window.fifth h2,
+.window.fifth .box,
+.window.sixth h3,
+.window.sixth .box,
+.window.sixth ul li,
+.window.sixth .box {
+  transform-origin: left center;
+}
+
+.loaded .window.second h1,
+.loaded .window.second p,
+.window.third.react h2,
+.window.third.react p,
+.window.third.react .box,
+.window.fourth.react h2,
+.window.fifth.react h2,
+.window.fifth.react .box,
+.window.sixth.react h3,
+.window.sixth.react .content>p,
+.window.sixth.react ul li,
+.window.sixth.react .box,
+.window.seventh.react h3,
+.window.seventh.react p,
+.window.eighth.react h3,
+.window.eighth.react p,
+.window.eighth.react .box,
+.window.ninth.react h3,
+.window.ninth.react p,
+.window.tenth.react h3,
+.window.tenth.react p,
+.window.eleventh.react h3,
+.window.eleventh.react p,
+.window.mobile-sustainable.react h2 {
+  opacity: 1;
+  transform: translateY(0px) scale(1);
+}
+
+.window.third p,
+.window.fifth .box,
+.window.sixth .content>p,
+.window.seventh p:first-child,
+.window.eighth p:first-child,
+.window.ninth p:first-child,
+.window.tenth p:first-child,
+.window.eleventh p:first-child {
+  transition-delay: 0.75s;
+}
+
+.window.second p {
+  transition-delay: 1.95s;
+}
+
+.window.third .box,
+.window.sixth ul li:first-child,
+.window.seventh p:nth-child(3),
+.window.eighth p:nth-child(3),
+.window.ninth p:nth-child(3),
+.window.tenth p:nth-child(3),
+.window.eleventh p:nth-child(3) {
+  transition-delay: 0.9s;
+}
+
+.window.sixth ul li:nth-child(2),
+.window.eighth .box {
+  transition-delay: 1.05s;
+}
+
+.window.sixth .box {
+  transition-delay: 1.2s;
+}
+
+.recycling-value .window {
+  position: relative;
+}
+
+.recycling-value .window>.back {
+  top: 75px;
+  font-family: "Clash";
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+
+.recycling-value .window>.back img {
+  vertical-align: -3px;
+  margin-right: 15px;
+}
+
+.recycling-value .window>.recycle {
+  top: auto;
+  bottom: 90px;
+  margin-left: 0;
+}
+
+.recycling-value .window .content>p {
+  font-family: "Clash";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.recycling-value .window .content>h3 {
+  font-family: "Clash";
+  font-weight: 500;
+  font-size: 40px;
+  max-width: 660px;
+  margin-top: 0;
+}
+
+.recycling-value .window .content>h3 span {
+  font-size: 14px;
+}
+
+.recycling-value .window .content>h6 {
+  font-family: "Clash";
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.recycling-value .window .content button {
+  color: #fff;
+  border: 2px solid #4a706b;
+  padding: 26px;
+  background: #4a706b;
+  font-family: "Satoshi";
+  font-size: 30px;
+  line-height: 35px;
+  text-align: left;
+  font-weight: 500;
+  max-width: 339px;
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.recycling-value .window .content button:first-of-type {
+  margin-right: 30px;
+}
+
+.recycling-value .window .content button:hover {
+  background: transparent;
+  color: #4a706b;
+}
+
+.recycling-value .count {
+  position: absolute;
+  top: 90px;
+  right: 0px;
+  background: #000;
+  color: #fff;
+  padding: 15px 30px 45px;
+}
+
+.recycling-value .count::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  width: 9999px;
+  background: #000;
+}
+
+.recycling-value .count p {
+  font-family: "Clash";
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.recycling-value .count h1 {
+  font-size: 100px;
+  font-family: "Clash";
+  font-weight: 500;
+  margin: 0;
+}
+
+.recycling-value .count span {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Satoshi";
+  display: block;
+  max-width: 240px;
+}
+
+.mobile .roller {
+  left: calc(50% - 53.5px);
+  position: absolute;
+  top: 540px;
+}
+
+.mobile .window.first .logo {
+  max-width: 50%;
+}
+
+.mobile .leaves {
+  display: none;
+}
+
+.mobile .window.second {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.mobile .window.second h1 {
+  font-size: 42px;
+}
+
+.mobile .window.second p {
+  font-size: 20px;
+}
+
+.mobile .window .mobile-landing {
+  display: block;
+}
+
+.mobile .window.third,
+.mobile .window.fourth,
+.mobile .window.fifth,
+.mobile .window.sixth,
+.mobile .window.seventh,
+.mobile .window.eighth,
+.mobile .window.ninth,
+.mobile .window.tenth,
+.mobile .window.eleventh,
+.mobile .window.twelfth,
+.mobile .window.thirteenth {
+  height: auto;
+}
+
+.mobile .window.third h2 {
+  font-size: 30px;
+  max-width: 100%;
+  margin-left: 0;
+  margin-top: 420px;
+}
+
+.mobile .window.third p {
+  font-size: 20px;
+  max-width: 100%;
+  margin-left: 0;
+}
+
+.mobile .window.third a,
+.mobile .window.fourth a {
+  margin-left: 0;
+  margin-bottom: 120px;
+}
+
+.mobile .window .mobile-recycling {
+  display: block;
+}
+
+.mobile .window.fourth h2 {
+  font-size: 30px;
+  margin-left: 0;
+  max-width: 100%;
+}
+
+.mobile .window.fourth h2 {
+  margin-top: 300px;
+}
+
+.mobile .window.mobile-sustainable {
+  display: block;
+}
+
+.mobile .window.fifth {
+  display: none;
+}
+
+.mobile .window.mobile-how {
+  display: block;
+}
+
+.mobile .window.sixth h3 {
+  margin-left: 0;
+  font-size: 30px;
+}
+
+.mobile .window.sixth .content>p {
+  margin-left: 60px;
+}
+
+.mobile .window.sixth ul {
+  padding-left: 60px;
+}
+
+.mobile .window.sixth ul li h4 {
+  font-size: 20px;
+}
+
+.mobile .window.sixth ul li p {
+  font-size: 14px;
+}
+
+.mobile .window.sixth a {
+  margin-left: 0;
+  margin-bottom: 90px;
+}
+
+.mobile .mobile-01,
+.mobile .mobile-02,
+.mobile .mobile-03,
+.mobile .mobile-04,
+.mobile .mobile-05 {
+  display: block;
+}
+
+.mobile .window.seventh h3,
+.mobile .window.eighth h3,
+.mobile .window.ninth h3,
+.mobile .window.tenth h3,
+.mobile .window.eleventh h3 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.mobile .window.seventh .content,
+.mobile .window.eighth .content,
+.mobile .window.ninth .content,
+.mobile .window.tenth .content,
+.mobile .window.eleventh .content {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 60px;
+}
+
+.mobile .path {
+  display: none;
+}
+
+.mobile .window.twelfth h3 {
+  padding-left: 0;
+}
+
+.mobile .window.twelfth a {
+  margin-left: 0;
+  margin-bottom: 45px;
+}
+
+.mobile .window.twelfth h6 {
+  margin-top: 30px;
+  padding-left: 0;
+}
+
+.mobile .window.twelfth ul {
+  padding-left: 60px;
+}
+
+.mobile .window.twelfth>img {
+  display: none;
+}
+
+.mobile .window.twelfth .know {
+  display: block;
+  width: 39px;
+}
+
+.mobile .window.thirteenth {
+  flex-direction: column;
+}
+
+.mobile .window.thirteenth .content {
+  width: 100%;
+}
+
+.mobile .window.thirteenth h2 {
+  font-size: 60px;
+  margin-top: 180px;
+}
+
+.mobile .window.thirteenth .social a {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.window.thirteenth .address {
+  flex-direction: column;
+}
+
+.window.thirteenth .address .col:first-child {
+  margin-bottom: 60px;
+}
+
+.mobile .window.thirteenth .social a:not(:last-child) {
+  margin-right: 0;
+}
+
+.mobile .window.thirteenth form button {
+  margin-bottom: 300px;
+}
